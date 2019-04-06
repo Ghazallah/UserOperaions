@@ -64,11 +64,11 @@ public class User  implements java.io.Serializable {
     
      @Column(name="phone", length=45)
     public String getPhone() {
-        return this.firstName;
+        return this.phone;
     }
     
-    public void setPhone(String firstName) {
-        this.firstName = firstName;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     
