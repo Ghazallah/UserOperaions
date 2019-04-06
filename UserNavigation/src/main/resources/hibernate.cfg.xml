@@ -60,7 +60,7 @@ Contributor(s):
         <!-- Maximum time that a connection is allowed to sit ideal in the pool -->
         <property name="hibernate.hikari.idleTimeout">200000</property>
 		
-        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
 <!--        <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>-->
     <mapping class="com.mycompany.usernavigation.User"/>
