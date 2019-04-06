@@ -117,6 +117,7 @@ public class UserTransactions extends BorderPane {
                     user.setFirstName(textFieldFirstName.getText());
                     user.setLastName(textFieldLastName.getText());
                     user.setMiddleName(textFieldMiddleName.getText());
+                    user.setEmail(textFieldEmail.getText());
                     user.setPhone(textFieldPhone.getText());
    
                     if(flag==false){
@@ -147,6 +148,7 @@ public class UserTransactions extends BorderPane {
                     user.setFirstName(textFieldFirstName.getText());
                     user.setLastName(textFieldLastName.getText());
                     user.setMiddleName(textFieldMiddleName.getText());
+                    user.setEmail(textFieldEmail.getText());
                     user.setPhone(textFieldPhone.getText());
                     services.delete(user);
                     //Resultset.deleteRow();                
@@ -219,8 +221,6 @@ public class UserTransactions extends BorderPane {
                 textFieldEmail.setText(userList.get(index).getEmail());
                 textFieldPhone.setText(userList.get(index).getPhone());
             } 
-            
-        
         });
 
         Last.setLayoutX(300.0);
