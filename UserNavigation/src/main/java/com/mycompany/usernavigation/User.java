@@ -21,7 +21,7 @@ public class User  implements java.io.Serializable {
      private String firstName;
      private String middleName;
      private String lastName;
-     private String emai;
+     private String email;
 
     public User() {
     }
@@ -30,12 +30,12 @@ public class User  implements java.io.Serializable {
     public User(int id) {
         this.id = id;
     }
-    public User(int id, String firstName, String middleName, String lastName, String emai) {
+    public User(int id, String firstName, String middleName, String lastName, String email) {
        this.id = id;
        this.firstName = firstName;
        this.middleName = middleName;
        this.lastName = lastName;
-       this.emai = emai;
+       this.email = email;
     }
    
      @Id 
@@ -81,13 +81,13 @@ public class User  implements java.io.Serializable {
     }
 
     
-    @Column(name="emai", length=45)
-    public String getEmai() {
-        return this.emai;
+    @Column(name="email", length=45)
+    public String getEmail() {
+        return this.email;
     }
     
-    public void setEmai(String emai) {
-        this.emai = emai;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
 
