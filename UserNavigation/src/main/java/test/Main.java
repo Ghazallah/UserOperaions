@@ -21,6 +21,7 @@ public class Main {
         user.setLastName("Sobhy");
         user.setLastName("Ghazallah");
         user.setEmail("ghazallah64@gmail.com");
+        user.setPhone("0100");
         UserDAO userDAO = new UserDAOImpl();
         userDAO.create(user);
     }

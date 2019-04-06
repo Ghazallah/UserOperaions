@@ -22,6 +22,7 @@ public class User  implements java.io.Serializable {
      private String middleName;
      private String lastName;
      private String email;
+     private String phone;
 
     public User() {
     }
@@ -30,12 +31,13 @@ public class User  implements java.io.Serializable {
     public User(int id) {
         this.id = id;
     }
-    public User(int id, String firstName, String middleName, String lastName, String email) {
+    public User(int id, String firstName, String middleName, String lastName, String email,String phone) {
        this.id = id;
        this.firstName = firstName;
        this.middleName = middleName;
        this.lastName = lastName;
        this.email = email;
+       this.phone = phone;
     }
    
      @Id 
@@ -57,6 +59,15 @@ public class User  implements java.io.Serializable {
     }
     
     public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    
+     @Column(name="phone", length=45)
+    public String getPhone() {
+        return this.firstName;
+    }
+    
+    public void setPhone(String firstName) {
         this.firstName = firstName;
     }
 
